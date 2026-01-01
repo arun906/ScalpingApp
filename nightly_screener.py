@@ -117,7 +117,7 @@ def run_screener():
     tomorrow = today + timedelta(days=1)
 
     final_df["selection_date"] = today
-    final_df["usable_for_date"] = tomorrow
+    final_df["usable_for_date"] = today
 
     final_df.to_csv(ACTIVE_WATCHLIST_FILE, index=False)
     print(f"Saved active watchlist for {tomorrow} with {len(final_df)} stocks to {ACTIVE_WATCHLIST_FILE}")
