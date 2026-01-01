@@ -1,0 +1,7 @@
+pandas
+numpy
+yfinance
+streamlit
+pytz
+requests
+python-dateutil
